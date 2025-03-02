@@ -11,7 +11,7 @@ def main():
 
 def load_vector_store():
     vector_store = Chroma(
-        collection_name="example_collection",
+        collection_name="text_collection",
         embedding_function=embeddings,
         persist_directory=constants.CHROMA_DB_PATH,  # Where to save data locally, remove if not necessary
     )
